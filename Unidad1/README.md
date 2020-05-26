@@ -1,6 +1,14 @@
-# mineria_datos
+# Unidad 1
 
-# Practice_1
+### [Practice 1](/Unidad1/Practicas/Practice_1.R)
+### [Practice 2](Unidad1/Practicas/Practice_2.R)
+### [Practice 3](Unidad1/Practicas/Practice_3.R)
+### [Practice 4](Unidad1/Practicas/Practice_4.R)
+### [Practice 5](Unidad1/Practicas/Practice_5.R)
+
+Unidad1/Practicas/Practice_1.R
+
+# Practice 1
 
 Test the Law Of Large Numbers for N random normally distributed numbers with mean = 0, stdev=1:
   
