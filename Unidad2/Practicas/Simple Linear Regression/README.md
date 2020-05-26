@@ -137,12 +137,13 @@ points(set, pch = 21, bg = ifelse(set[, 1] == 1, 'green4', 'red3'))
 
 ### Visualization the Training set result
 
+![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Simple%20Linear%20Regression/age.png)
+
+![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Simple%20Linear%20Regression/fare.png)
 
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Simple%20Linear%20Regression/LRTR.png)
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Simple%20Linear%20Regression/LRT.png)
 
-![alt text](http://url/to/img.png)
 
-![alt text](http://url/to/img.png)
