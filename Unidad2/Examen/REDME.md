@@ -1,3 +1,5 @@
+
+```R
 getwd()
 setwd("/Users/fernando/Documents/mineria/mineria_datos/Unidad2/Examen")
 getwd()
@@ -20,3 +22,4 @@ moviesExam <- ggplot(moviesExam, aes(x=Genre, y=Gross...US,
 
 
 moviesExam + geom_jitter(aes(color=Studio)) + geom_boxplot(size=.4, alpha=0.5)
+```
