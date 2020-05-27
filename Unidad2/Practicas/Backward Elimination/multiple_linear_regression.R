@@ -73,7 +73,7 @@ backwardElimination <- function(x, sl) {
     #Return the  last numbers of colums to continue de loop
     numVars = numVars - 1
   }
-  #Return model fitting 
+  #model fitting Returned
   return(summary(regressor))
 }
 
