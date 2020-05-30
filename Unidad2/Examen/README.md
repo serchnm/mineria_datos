@@ -34,7 +34,7 @@ studio <- c("Buena Vista Studios", "Fox", "Paramount Pictures", "Sony", "Univers
 ```R
 library(ggplot2)
 ```
-### Make the filter only need the "genere and studio" we selected 
+### We create  the filter for the only data we need "genre and studio" 
 
 ```R
 moviesExam <- moviesExam[moviesExam$Genre %in% genere, ]
