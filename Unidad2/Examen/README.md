@@ -4,7 +4,7 @@
 ### Get de filepath data
 
 ```R
-setwd("/Users/fernando/Documents/mineria/mineria_datos/Unidad2/Examen")
+setwd("PATH_TO_FILE/Unidad2/Examen")
 ```
 ### Returns an absolute filepath representing the current working directory
 
