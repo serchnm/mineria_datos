@@ -11,12 +11,17 @@ moviesExam <- moviesExam[c(3, 6, 8, 18)]
 #Select criteria of  the data we need
 genere <- c("action", "adventure", "animation", "comedy", "drama")
 studio <- c("Buena Vista Studios", "Fox", "Paramount Pictures", "Sony", "Universal", "WB")
+movies$Year <- factor(movies$Year)
+
 
 #Install the library
 library(ggplot2)
 #Make the filter only need the "genere and studio" we selected 
 moviesExam <- moviesExam[moviesExam$Genre %in% genere, ]
 moviesExam <- moviesExam[moviesExam$Studio %in% studio, ]
+
+moviesExam$Genre <- factor(moviesExam$Genre)
+moviesExam$Studio <- factor(moviesExam$Studio)
 
 #To see the first data of the dataset to check the changes we made
 head(moviesExam)
