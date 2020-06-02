@@ -50,13 +50,13 @@ colnames(grid_set) = c('Age', 'EstimatedSalary')
 # here we use the classifier to predict the result of each of each of the pixel bits noted above
 y_grid = predict(model, newdata = grid_set)
 
-#plat the actual data 
+#plot the actual data 
 plot(training_set[, -3],
      main = 'Naive Bayes (Training set)',
      xlab = 'Age', ylab = 'Estimated Salary',
      xlim = range(X1), ylim = range(X2)) # this bit creates the limits to the values plotted this is also a part of the MAGIC as it creates the line between green and red
 contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
-# here we run through all the y_pred data and use if else to color the dots
+# here we run through all the pred data and use if else to color the dots
 # note the dots are the real data, the background is the pixel by pixel determination of y/n
 # graph the dots on top of the background give you the image
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
