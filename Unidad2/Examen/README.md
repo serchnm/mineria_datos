@@ -69,7 +69,7 @@ moviesExam + geom_jitter(aes(color=Studio)) + geom_boxplot(size=.4, alpha=0.5)
 In this graph you can see the most concentration of Studios it's in the genre of Action in the many of these movies the Budget it's 200 or more, also we can see the higher budget and lower and the studio with more movies its WB
 
 
-# Exam Unit 2
+# Exam Unit 3
 
 
 ### Install libraries 
