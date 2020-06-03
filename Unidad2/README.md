@@ -132,3 +132,27 @@ If FALSE, overrides the default aesthetics, rather than combining with them. Thi
 - size
 
 
+## p.value
+
+### Compute The P-Value For A Distribution
+
+When you perform a statistical test a p-value helps you determine the significance of your results in relation to the null hypothesis.
+
+The p-value of a distribution is here interpreted as the probability outside the smallest credibility interval or region containing a point; if no point is explicitly given, it is assumed to be zero, or the origin.
+
+
+### Usage
+
+```R
+p.value(object, point)
+```
+
+### Arguments
+
+**object**          The probability distribution for which the p-value should be computed.
+
+**point**           The point which should be included in the credibility interval or region.
+
+### Value       
+
+The probability outside the smallest credibility interval or region containing the point.
