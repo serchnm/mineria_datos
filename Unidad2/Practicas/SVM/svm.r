@@ -1,71 +1,112 @@
 # Support Vector Machine (SVM)
-# Set our workspace
 getwd()
-setwd("/home/saulsp96/Documents/mineria_datos/Unidad2/Practicas/Logistic_Regression")
+setwd("/home/saulsp96/Documents/mineria_datos/Unidad2/Practicas/svm")
 getwd()
 
-# Importing the dataset
-dataset <- read.csv('50_Startups.csv')
+dataset = read.csv('Social_Network_Ads.csv')
 dataset = dataset[3:5]
 
-# Encoding categorical data 
-dataset$State = factor(dataset$State,
-                       levels = c('New York', 'California', 'Florida'),
-                       labels = c(1,2,3))
+dataset$Purchased = factor(dataset$Purchased, levels = c(0, 1))
 
-# Splitting the dataset into the Training set and Test set
-# install.packages('caTools')
+install.packages('caTools')
 library(caTools)
 set.seed(123)
 split = sample.split(dataset$Purchased, SplitRatio = 0.75)
 training_set = subset(dataset, split == TRUE)
 test_set = subset(dataset, split == FALSE)
 
-# Feature Scaling
 training_set[-3] = scale(training_set[-3])
 test_set[-3] = scale(test_set[-3])
 
-# Fitting SVM to the Training set
-# install.packages('e1071')
+install.packages('e1071')
 library(e1071)
-classifier = svm(formula = Purchased ~ .,
+classifier1 = svm(formula = Purchased ~ .,
                  data = training_set,
                  type = 'C-classification',
                  kernel = 'linear')
+classifier2 = svm(formula = Purchased ~ .,
+                 data = training_set,
+                 type = 'C-classification',
+                 kernel = 'polynomial')
+classifier3 = svm(formula = Purchased ~ .,
+                 data = training_set,
+                 type = 'C-classification',
+                 kernel = 'radial')
+classifier4 = svm(formula = Purchased ~ .,
+                 data = training_set,
+                 type = 'C-classification',
+                 kernel = 'sigmoid')
 svm
-# Predicting the Test set results
-y_pred = predict(classifier, newdata = test_set[-3])
-y_pred
-# Making the Confusion Matrix
-cm = table(test_set[, 3], y_pred)
-cm
-# Visualising the Training set results
+
+y_pred1 = predict(classifier1, newdata = test_set[-3])
+y_pred2 = predict(classifier2, newdata = test_set[-3])
+y_pred3 = predict(classifier3, newdata = test_set[-3])
+y_pred4 = predict(classifier4, newdata = test_set[-3])
+y_pred1
+y_pred2
+y_pred3
+y_pred4
+
+cm1 = table(test_set[, 3], y_pred1)
+cm2 = table(test_set[, 3], y_pred2)
+cm3 = table(test_set[, 3], y_pred3)
+cm4 = table(test_set[, 3], y_pred4)
+cm1
+cm2
+cm3
+cm4
+
 library(ElemStatLearn)
 set = training_set
 X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
 X2 = seq(min(set[, 2]) - 1, max(set[, 2]) + 1, by = 0.01)
 grid_set = expand.grid(X1, X2)
 colnames(grid_set) = c('Age', 'EstimatedSalary')
-y_grid = predict(classifier, newdata = grid_set)
+y_grid1 = predict(classifier1, newdata = grid_set)
+y_grid2 = predict(classifier2, newdata = grid_set)
+y_grid3 = predict(classifier3, newdata = grid_set)
+y_grid4 = predict(classifier4, newdata = grid_set)
 plot(set[, -3],
      main = 'SVM (Training set)',
      xlab = 'Age', ylab = 'Estimated Salary',
      xlim = range(X1), ylim = range(X2))
-contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
-points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
+contour(X1, X2, matrix(as.numeric(y_grid1), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid1 == 1, 'springgreen3', 'tomato'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+contour(X1, X2, matrix(as.numeric(y_grid2), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid2 == 1, 'springgreen3', 'tomato'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+contour(X1, X2, matrix(as.numeric(y_grid3), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid3 == 1, 'springgreen3', 'tomato'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+contour(X1, X2, matrix(as.numeric(y_grid4), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid4 == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
-# Visualising the Test set results
 library(ElemStatLearn)
 set = test_set
 X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
 X2 = seq(min(set[, 2]) - 1, max(set[, 2]) + 1, by = 0.01)
 grid_set = expand.grid(X1, X2)
 colnames(grid_set) = c('Age', 'EstimatedSalary')
-y_grid = predict(classifier, newdata = grid_set)
+
+y_grid1 = predict(classifier1, newdata = grid_set)
+y_grid2 = predict(classifier2, newdata = grid_set)
+y_grid3 = predict(classifier3, newdata = grid_set)
+y_grid4 = predict(classifier4, newdata = grid_set)
+
 plot(set[, -3], main = 'SVM (Test set)',
      xlab = 'Age', ylab = 'Estimated Salary',
      xlim = range(X1), ylim = range(X2))
-contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
-points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
+contour(X1, X2, matrix(as.numeric(y_grid1), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid1 == 1, 'springgreen3', 'tomato'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+contour(X1, X2, matrix(as.numeric(y_grid2), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid2 == 1, 'springgreen3', 'tomato'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+contour(X1, X2, matrix(as.numeric(y_grid3), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid3 == 1, 'springgreen3', 'tomato'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+contour(X1, X2, matrix(as.numeric(y_grid4), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid4 == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
