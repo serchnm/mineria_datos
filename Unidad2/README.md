@@ -2,7 +2,7 @@
 
 ## Practices
 
-### [1.- Simple Linear Regression](/Practicas)
+### [1.- Simple Linear Regression](/Unidad2/Practicas/Simple_Linear_Regression)
 ### [2.- Multiple Linear Regression](/Practicas/Multiple_Linear_Regression_(LR))
 ### [3.- Backward Elimination](/Practicas/Backward_Elimination)
 ### [4.- Logistic Regression](/Practicas/Logistic_Regression)
