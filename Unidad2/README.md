@@ -1,25 +1,28 @@
 # Unit 2
 
+## Homeworks
+
+### [1.- The Geometric Distribution](/Unidad1)
+### [2.- Geom_jitter](/Unidad2)
+### [3.- P value](/Unidad3)
+### [4.- ](/Unidad4)
+### [5.- ](/Unidad3)
+### [6.- ](/SVM)
+
 ## Practices
 
 ### [1.- Simple Linear Regression](/Unidad2/Practicas/Simple_Linear_Regression)
-### [2.- Multiple Linear Regression](/Practicas/Multiple_Linear_Regression_(LR))
-### [3.- Backward Elimination](/Practicas/Backward_Elimination)
+### [2.- Multiple Linear Regression](/Unidad2/Practicas/Multiple_Linear_Regression_(LR))
+### [3.- Backward Elimination](/Unidad2/Practicas/Backward_Elimination)
 ### [4.- Logistic Regression](/Practicas/Logistic_Regression)
-### [5.- SVM](/Practicas/SVM)
-### [6.- Decision Tree](/Practicas/Decision_Tree)
+### [5.- SVM](/Unidad2/Practicas/SVM)
+### [6.- Decision Tree](/Unidad2/Practicas/Decision_Tree)
 
 
-## Homeworks
+## Exam
 
-### [Simple Linear Regression](/Unidad1)
-### [Multiple Linear Regression](/Unidad2)
-### [Backward Elimination](/Unidad3)
-### [Logistic Regression](/Unidad4)
-### [Backward Elimination](/Unidad3)
-### [SVM](/SVM)
-### [Decision Tree](/Decision_Tree)
-
+### [Exam 1](//Unidad2/Examen#exam-unit-2)
+### [Exam 2](/Unidad2/Examen#exam-unit-3)
 
 ## The Geometric Distribution
 
