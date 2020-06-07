@@ -2,14 +2,14 @@
 
 ## Practices
 
-### [1.- Simple Linear Regression](/Simple%20Linear%20Regression)
-### [2.- Multiple Linear Regression](/Multiple%20Linear%20Regression)
-### [3.- Backward Elimination](/Backward%20Elimination)
-### [4.- Logistic Regression](/Logistic%20Regression)
-### [5.- SVM](/SVM)
-### [6.- Decision Tree](/Decision_Tree)
+### [1.- Simple Linear Regression](/Unidad1/Practicas/Simple_Linear_Regression)
+### [2.- Multiple Linear Regression](/Unidad1/Practicas/Multiple_Linear_Regression_(LR))
+### [3.- Backward Elimination](/Unidad1/Practicas/Backward_Elimination)
+### [4.- Logistic Regression](/Unidad1/Practicas/Logistic_Regression)
+### [5.- SVM](/Unidad1/Practicas/SVM)
+### [6.- Decision Tree](/Unidad1/Practicas/Decision_Tree)
 
-
+/Backward Elimination/
 ## Homeworks
 
 ### [Simple Linear Regression](/Unidad1)
