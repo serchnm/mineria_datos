@@ -12,17 +12,19 @@
 ## Practices
 
 ### [1.- Simple Linear Regression](/Unidad2/Practicas/Simple_Linear_Regression)
-### [2.- Multiple Linear Regression](/Unidad2/Practicas/Multiple_Linear_Regression_(LR))
+### [2.- Multiple Linear Regression](/Unidad2/Practicas/Multiple_Linear_Regression)
 ### [3.- Backward Elimination](/Unidad2/Practicas/Backward_Elimination)
-### [4.- Logistic Regression](/Practicas/Logistic_Regression)
+### [4.- Logistic Regression](/Unidad2//Practicas/Logistic_Regression)
 ### [5.- SVM](/Unidad2/Practicas/SVM)
 ### [6.- Decision Tree](/Unidad2/Practicas/Decision_Tree)
+
+Multiple_Linear_Regression _(LR)
 
 
 ## Exam
 
-### [Exam 1](//Unidad2/Examen/Examen#exam-unit-2)
-### [Exam 2](/Unidad2/Examen/Examen#exam-unit-3)
+### [Exam 1](//Unidad2/Examen/#exam-unit-2)
+### [Exam 2](/Unidad2/Examen/#exam-unit-3)
 
 ## The Geometric Distribution
 
