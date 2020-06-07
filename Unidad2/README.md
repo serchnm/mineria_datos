@@ -2,12 +2,13 @@
 
 ## Homeworks
 
-### [1.- The Geometric Distribution](/Unidad1)
-### [2.- Geom_jitter](/Unidad2)
-### [3.- P value](/Unidad3)
+### [1.- The Geometric Distribution](#the-geometric-distribution)
+### [2.- Geom_jitter](#geom_jitter)
+### [3.- P value](#pvalue)
 ### [4.- ](/Unidad4)
 ### [5.- ](/Unidad3)
 ### [6.- ](/SVM)
+
 
 ## Practices
 
@@ -17,11 +18,10 @@
 ### [4.- Logistic Regression](/Unidad2//Practicas/Logistic_Regression)
 ### [5.- SVM](/Unidad2/Practicas/SVM)
 ### [6.- Decision Tree](/Unidad2/Practicas/Decision_Tree)
-https://github.com/FerFuentes/mineria_datos/tree/Unidad2/Unidad2/Examen#exam-unit-2
 
 ## Exam
 
-### [Exam 1](/Unidad2/Examen/Examen#exam-unit-2)
+### [Exam 1](/Unidad2/Examen/#exam-unit-2)
 ### [Exam 2](/Unidad2/Examen/#exam-unit-3)
 
 ## The Geometric Distribution
