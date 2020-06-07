@@ -1,4 +1,24 @@
-# Unidad 2
+# Unit 2
+
+## Practices
+
+### [1.- Simple Linear Regression](/Simple%20Linear%20Regression)
+### [2.- Multiple Linear Regression](/Multiple%20Linear%20Regression)
+### [3.- Backward Elimination](/Backward%20Elimination)
+### [4.- Logistic Regression](/Logistic%20Regression)
+### [5.- SVM](/SVM)
+### [6.- Decision Tree](/Decision_Tree)
+
+
+## Homeworks
+
+### [Simple Linear Regression](/Unidad1)
+### [Multiple Linear Regression](/Unidad2)
+### [Backward Elimination](/Unidad3)
+### [Logistic Regression](/Unidad4)
+### [Backward Elimination](/Unidad3)
+### [SVM](/SVM)
+### [Decision Tree](/Decision_Tree)
 
 
 ## The Geometric Distribution
