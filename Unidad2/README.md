@@ -17,13 +17,11 @@
 ### [4.- Logistic Regression](/Unidad2//Practicas/Logistic_Regression)
 ### [5.- SVM](/Unidad2/Practicas/SVM)
 ### [6.- Decision Tree](/Unidad2/Practicas/Decision_Tree)
-
-Multiple_Linear_Regression _(LR)
-
+https://github.com/FerFuentes/mineria_datos/tree/Unidad2/Unidad2/Examen#exam-unit-2
 
 ## Exam
 
-### [Exam 1](//Unidad2/Examen/#exam-unit-2)
+### [Exam 1](/Unidad2/Examen/Examen#exam-unit-2)
 ### [Exam 2](/Unidad2/Examen/#exam-unit-3)
 
 ## The Geometric Distribution
