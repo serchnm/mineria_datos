@@ -69,9 +69,9 @@ ggplot() +
 ### Visualization 
 
 --
-![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Simple%20Linear%20Regression/TrainingSet.png)
+![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Simple_Linear_Regression/TrainingSet.png)
 --
-![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Simple%20Linear%20Regression/TestSet.png)
+![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Simple_Linear_Regression/TestSet.png)
 --
 
 

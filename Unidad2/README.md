@@ -21,8 +21,8 @@
 
 ## Exam
 
-### [Exam 1](//Unidad2/Examen#exam-unit-2)
-### [Exam 2](/Unidad2/Examen#exam-unit-3)
+### [Exam 1](//Unidad2/Examen/Examen#exam-unit-2)
+### [Exam 2](/Unidad2/Examen/Examen#exam-unit-3)
 
 ## The Geometric Distribution
 
