@@ -60,8 +60,8 @@ clusplot(dataset,
 ### Visualization 
 
 --
-![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad4/elbow.png)
+![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad4/elbow.png)
 --
-![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad4/clusters.png)
+![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad4/clusters.png)
 --
 
