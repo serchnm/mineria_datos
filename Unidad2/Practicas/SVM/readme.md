@@ -1,29 +1,46 @@
-//Support Vector Machine (SVM)
-//Set our workspace
+## Support Vector Machine (SVM)
+
+### Set our workspace
+
+```R
 getwd()
 setwd("/home/saulsp96/Documents/mineria_datos/Unidad2/Practicas/svm")
 getwd()
+```
 
-//Importing the dataset
+### Importing the dataset
+
+```R
 dataset = read.csv('Social_Network_Ads.csv')
 dataset = dataset[3:5]
+```
 
-//Encoding the target feature as factor
-dataset$Purchased = factor(dataset$Purchased, levels = c(0, 1))
+### Encoding the target feature as factor
 
-//Splitting the dataset into the Training set and Test set
+```R
+dataset$Purchased = factor(dataset$Purchased, levels = c(0, 1))`
+```
+### Splitting the dataset into the Training set and Test set
+
+```R
 install.packages('caTools')
 library(caTools)
 set.seed(123)
 split = sample.split(dataset$Purchased, SplitRatio = 0.75)
 training_set = subset(dataset, split == TRUE)
 test_set = subset(dataset, split == FALSE)
+```
 
-//Feature Scaling
+### Feature Scaling
+
+```R
 training_set[-3] = scale(training_set[-3])
 test_set[-3] = scale(test_set[-3])
+```
 
-//Fitting SVM to the Training set
+### Fitting SVM to the Training set
+
+```R
 install.packages('e1071')
 library(e1071)
 classifier1 = svm(formula = Purchased ~ .,
@@ -42,8 +59,13 @@ classifier4 = svm(formula = Purchased ~ .,
                  data = training_set,
                  type = 'C-classification',
                  kernel = 'sigmoid')
+
 svm
-//Predicting the Test set results
+```
+
+### Predicting the Test set results
+
+```R
 y_pred1 = predict(classifier1, newdata = test_set[-3])
 y_pred2 = predict(classifier2, newdata = test_set[-3])
 y_pred3 = predict(classifier3, newdata = test_set[-3])
@@ -52,8 +74,10 @@ y_pred1
 y_pred2
 y_pred3
 y_pred4
+```
+### Making the Confusion Matrix
 
-//Making the Confusion Matrix
+```R
 cm1 = table(test_set[, 3], y_pred1)
 cm2 = table(test_set[, 3], y_pred2)
 cm3 = table(test_set[, 3], y_pred3)
@@ -62,7 +86,11 @@ cm1
 cm2
 cm3
 cm4
-//Visualising the Training set results
+```
+
+### Visualising the Training set results
+
+```R
 library(ElemStatLearn)
 set = training_set
 X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
@@ -89,8 +117,11 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 contour(X1, X2, matrix(as.numeric(y_grid4), length(X1), length(X2)), add = TRUE)
 points(grid_set, pch = '.', col = ifelse(y_grid4 == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+```
 
-//Visualising the Test set results
+### Visualising the Test set results
+
+```R
 library(ElemStatLearn)
 set = test_set
 X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
@@ -118,3 +149,4 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 contour(X1, X2, matrix(as.numeric(y_grid4), length(X1), length(X2)), add = TRUE)
 points(grid_set, pch = '.', col = ifelse(y_grid4 == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+```
