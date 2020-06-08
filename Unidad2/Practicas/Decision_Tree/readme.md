@@ -100,4 +100,6 @@ text(classifier, cex=0.6)
 --
 ![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Decision_Tree/training.png)
 --
+![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Decision_Tree/test.png)
+--
 ![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Decision_Tree/tree.png)
