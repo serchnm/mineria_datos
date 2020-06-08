@@ -94,3 +94,10 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 plot(classifier)
 text(classifier, cex=0.6)
 ```
+
+### Visualization 
+
+--
+![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Decision_Tree/training.png)
+--
+![alt text](https://github.com/FerFuentes/mineria_datos/blob/Unidad2/Unidad2/Practicas/Decision_Tree/test.png)
